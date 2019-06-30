@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> isims </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="enterorgid.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet"/>
+
+</head>
+
+<body>
+    <?php
+    $id = "";
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $id = test_input($_POST["id"]);
+    }
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+    ?>
+<header class="App-header">isims</header>
+<div class="App">
+    <p> Enter your organization's ID. </p>
+    <form method="post" action="newexistentity.html">
+        <input class="FormInput" type="text" name="id"></input>
+        <input class="FormInput" type="submit" onClick="window.location='newexistentity.html';"></input>
+        <!-- call an api here when submitting to check for valid input -->
+    </form>
+    </div>
+</body>
+</html>
