@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.ISims{
+    text-decoration: none;
+    color: white;
+}
+.Top{
+    margin: 0;
+    padding-top: 10vh;
+    padding-bottom: 0;
+    text-align: center;
+    background-color: #282c34;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-header {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #4AC948; /* green */
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Paragraph{
+     background-color: #282c34;
+     padding-bottom: 10vh;
+}
+
+.Producer{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    display: inline;
+    background-color: #4AC948; /* green */
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 30vw;
+    height: 10vh;
+    appearance: button;
+   color: initial;
+}
+.Validator{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #4AC948; /* green */
+    border-radius: 10px;
+    text-decoration: none;
+    width: 30vw;
+    height: 10vh;
+   color: initial;
+}
