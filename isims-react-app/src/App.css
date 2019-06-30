@@ -1,3 +1,6 @@
+.AddSpace{
+    margin: 20vh;
+}
 .App-header {
   font-family: 'Source Code Pro', monospace;
   background-color: #4AC948; /* green */
@@ -11,7 +14,6 @@
 .App-intro {
   font-size: large;
 }
-
 .App {
   text-align: center;
   background-color: #282c34;
@@ -20,7 +22,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.Proceed{
+.GreenButton{
     font-family: 'Source Code Pro', monospace;
     font-size: 15px;
     background-color: #4AC948; /* green */
@@ -28,6 +30,25 @@
     width: 30vw;
     padding: 20px;
     margin: 20px;
+   text-decoration: none;
+   color: initial;
+}
+.ISIMSButton{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 10vh;
+    font-family: 'Source Code Pro', monospace;
+}
+.SmallGreenButton{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    background-color: #4AC948; /* green */
+    border-radius: 10px;
+    width: 20vw;
+    padding: 2px;
+    margin: 2px;
    text-decoration: none;
    color: initial;
 }

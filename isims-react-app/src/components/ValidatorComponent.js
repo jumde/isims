@@ -6,7 +6,7 @@ const ValidatorButton = withRouter(({ history }) => (
     type='button'
     onClick={() => { history.push('/organization_id') }}
   >
-    I am validator
+    I am Validator
   </button>
 ))
 class ValidatorComponent extends Component {

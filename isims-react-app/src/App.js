@@ -1,13 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import  HomePage from './components/HomePage';
+import HomePage from './components/HomePage';
+import GoToHome from './components/GoToHome';
 
 function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <h1> ISIMS </h1>
+         <GoToHome/>
       </div>
       <HomePage/>
     </div>

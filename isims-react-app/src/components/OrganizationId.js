@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Router, Route} from 'react-router'
 import ValidatorComponent from './ValidatorComponent'
 import ProducerComponent from './ProducerComponent'
+import GoToHome from './GoToHome'
 import axios from 'axios'
 import {withRouter} from 'react-router';
 import { Redirect } from 'react-router'
@@ -53,13 +54,18 @@ class OrganizationId extends Component {
         }}/>;
     }
     return (
-      <div>
+      <div className="App">
+         <div className="App-header">
+            <GoToHome/>
+         </div>
+         <div className="AddSpace"/>
         <form onSubmit={this.handleSubmit}>
           <label>
-            Enter organization id:
+            Enter Organization ID: <br/>
             <input type="text" name="name" value={this.state.organization_id} onChange={this.handleChange}/>
           </label>
-          <input type="submit" value="Submit" />
+          <br/>
+          <input className="SmallGreenButton" type="submit" value="Submit" />
         </form>
 
         // { this.state.is_validator ? <ValidatorComponent /> : null }

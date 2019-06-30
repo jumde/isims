@@ -6,15 +6,15 @@ import '../App.css';
 
 const Button = withRouter(({ history }) => (
   <button
-    className='GreenButton'
+    className="ISIMSButton"
     type='button'
-    onClick={() => { history.push('/organization_id') }}
+    onClick={() => { history.push('/') }}
   >
-    Proceed
+    ISIMS
   </button>
 ))
 
-class HomePage extends Component {
+class GoToHome extends Component {
   render() {
     return (
       <Button />
@@ -22,4 +22,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default GoToHome;
