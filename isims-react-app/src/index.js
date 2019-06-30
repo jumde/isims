@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import ProducerValidator from './components/ProducerValidator'
 import OrganizationId from './components/OrganizationId'
+import NewExistingEntity from './components/NewExistingEntity'
 
 import * as serviceWorker from './serviceWorker';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
@@ -14,6 +15,7 @@ const routing = (
       <Route exact  path="/" component={App} />
       <Route path="/producer-validator" component={ProducerValidator} />
       <Route path="/organization_id" component={OrganizationId} />
+      <Route path="/newexisting_entity" component={NewExistingEntity} />
     </div>
   </Router>
 )

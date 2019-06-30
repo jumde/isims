@@ -1,6 +1,9 @@
 .AddSpace{
     margin: 20vh;
 }
+.AddTinySpace{
+    margin: 10vh;
+}
 .App-header {
   font-family: 'Source Code Pro', monospace;
   background-color: #4AC948; /* green */
@@ -40,6 +43,9 @@
     padding: 10px;
     font-size: 10vh;
     font-family: 'Source Code Pro', monospace;
+}
+.SmallFont{
+    font-size: 10px;
 }
 .SmallGreenButton{
     font-family: 'Source Code Pro', monospace;

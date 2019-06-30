@@ -7,7 +7,6 @@ import axios from 'axios'
 import {withRouter} from 'react-router';
 import { Redirect } from 'react-router'
 
-
 class OrganizationId extends Component {
   constructor(props) {
     super(props)
@@ -27,23 +26,20 @@ class OrganizationId extends Component {
 
   handleSubmit(event) {
     let org_id = this.state.organization_id
-    axios.get('http://localhost:3000/organizations/'+org_id+'.json')
-    .then(response => {
-      console.log(response)
-      this.setState({is_validator: response.data.is_validator, is_producer: response.data.is_producer})
-    })
-    .then(() => this.setState({ redirect: true }))
-    event.preventDefault();
-  }
+    if (this.state.organization_id === ''){
+        window.alert("There's nothing here. Please enter again.")
+    }
+    else {
+        axios.get('http://serene-tundra-70252.herokuapp.com/organizations/'+org_id+'.json')
+        .then(response => {
+          console.log(response)
+          this.setState({is_validator: response.data.is_validator, is_producer: response.data.is_producer})
+        })
+        .then(() => this.setState({ redirect: true }))
+        event.preventDefault();
+      }
 
-  // componentDidMount() {
-  //   axios.get('http://localhost:3000/')
-  //   .then(response => {
-  //     console.log(response)
-  //     this.setState({ideas: response.data})
-  //   })
-  //   .catch(error => console.log(error))
-  // }
+    }
 
   render() {
     const { redirect } = this.state;
@@ -62,14 +58,13 @@ class OrganizationId extends Component {
         <form onSubmit={this.handleSubmit}>
           <label>
             Enter Organization ID: <br/>
+             <div className="AddTinySpace"/>
             <input type="text" name="name" value={this.state.organization_id} onChange={this.handleChange}/>
+            <div className="AddTinySpace"/>
           </label>
           <br/>
           <input className="SmallGreenButton" type="submit" value="Submit" />
         </form>
-
-        // { this.state.is_validator ? <ValidatorComponent /> : null }
-        // { this.state.is_producer ? <ProducerComponent /> : null }
       </div>
     )
   }

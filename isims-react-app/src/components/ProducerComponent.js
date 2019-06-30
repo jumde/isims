@@ -4,7 +4,7 @@ import {withRouter} from 'react-router';
 const ProducerButton = withRouter(({ history }) => (
   <button
     type='button'
-    onClick={() => { history.push('/organization_id') }}
+    onClick={() => { history.push('/newexisting_entity') }}
   >
     I am Producer
   </button>

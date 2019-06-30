@@ -10,6 +10,8 @@ function App() {
       <div className="App-header">
          <GoToHome/>
       </div>
+      <p className="AddSpace">Securing you, online.</p>
+      <br/>
       <HomePage/>
     </div>
   );

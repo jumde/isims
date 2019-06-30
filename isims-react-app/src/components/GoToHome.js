@@ -10,7 +10,8 @@ const Button = withRouter(({ history }) => (
     type='button'
     onClick={() => { history.push('/') }}
   >
-    ISIMS
+    ISIMS<br/>
+    <p className="SmallFont">International Secure Identity Management System</p>
   </button>
 ))
 
