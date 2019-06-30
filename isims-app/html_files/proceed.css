@@ -31,6 +31,7 @@ body {
 }
 .ISims{
     text-decoration: none;
+    color: white;
 }
 .Producer{
     font-family: 'Source Code Pro', monospace;
@@ -43,8 +44,8 @@ body {
     width: 30vw;
     height: 10vh;
     appearance: button;
-   color: initial;
-   text-decoration: none;
+    color: initial;
+    text-decoration: none;
 }
 .Validator{
     font-family: 'Source Code Pro', monospace;
@@ -55,5 +56,6 @@ body {
     border-radius: 10px;
     width: 30vw;
     height: 10vh;
-   color: initial;
+    color: initial;
+    text-decoration: none;
 }
