@@ -1,0 +1,33 @@
+.App-header {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #4AC948; /* green */
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 0;
+}
+.App-intro {
+  font-size: large;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Proceed{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    background-color: #4AC948; /* green */
+    border-radius: 10px;
+    width: 30vw;
+    padding: 20px;
+    margin: 20px;
+   text-decoration: none;
+   color: initial;
+}
